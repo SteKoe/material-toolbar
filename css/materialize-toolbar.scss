@@ -1,0 +1,88 @@
+$toolbar-height: 60px;
+
+.toolbar {
+  position: relative;
+  overflow: hidden;
+
+  height: $toolbar-height;
+
+  &.with-title {
+    height: $toolbar-height + 20;
+  }
+
+  .toolbar-group {
+    float: left;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+
+    select {
+      font-size: 85%;
+      height: inherit;
+      background-color: transparent;
+    }
+
+    .row {
+      margin: 3px;
+
+      &.full {
+        height: $toolbar-height - 2 * 3; // Due to margin of .row
+
+        .button {
+          height: $toolbar-height - 7;
+          width: $toolbar-height;
+          line-height: 45px;
+        }
+      }
+
+      .col {
+        padding: 0 1px;
+        text-align: center;
+        line-height: 29px;
+        height: 25px;
+      }
+
+      .button-toggle {
+        font-size: 85%;
+        display: block;
+        height: 25px;
+        line-height: 25px;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .button {
+        display: block;
+        padding: 5px 7px;
+        height: 25px;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+
+    .title {
+      padding: 4px 0;
+      margin: 0 3px;
+      text-align: center;
+      line-height: 13px !important;
+      font-size: .7em;
+      color: rgba(255, 255, 255, .4);
+    }
+  }
+
+}
+
+.bcf {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
