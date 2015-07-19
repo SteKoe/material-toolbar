@@ -2,13 +2,7 @@ $toolbar-height: 60px;
 
 .toolbar {
   position: relative;
-  overflow: hidden;
-
   height: $toolbar-height;
-
-  &.with-title {
-    height: $toolbar-height + 20;
-  }
 
   .toolbar-group {
     float: left;
@@ -21,6 +15,19 @@ $toolbar-height: 60px;
       font-size: 85%;
       height: inherit;
       background-color: transparent;
+    }
+
+    .dropdown-content {
+      min-width: inherit;
+
+      &.iconized {
+        li {
+          clear: none;
+          float: left;
+          width: 50%;
+          text-align: center;
+        }
+      }
     }
 
     .row {

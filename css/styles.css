@@ -47,7 +47,7 @@
 .bcf-order-bottom:before {
   content: "\e002";
 }
-.bcf-polygon:before {
+.bcf-hexagon:before {
   content: "\e003";
 }
 .bcf-rectangle:before {
@@ -59,9 +59,51 @@
 .bcf-polyline:before {
   content: "\e006";
 }
-.bcf-bezier:before {
-  content: "\e007";
-}
 .bcf-textarea:before {
   content: "\e008";
+}
+.bcf-pentagram:before {
+  content: "\e009";
+}
+.bcf-arrow-left:before {
+  content: "\e007";
+}
+.bcf-bracket-curved-left:before {
+  content: "\e00a";
+}
+.bcf-bracket-curved-right:before {
+  content: "\e00b";
+}
+.bcf-bezier:before {
+  content: "\e00c";
+}
+.bcf-bracket-round-left:before {
+  content: "\e00d";
+}
+.bcf-bracket-round-right:before {
+  content: "\e00e";
+}
+.bcf-hexagram:before {
+  content: "\e010";
+}
+.bcf-pentagon:before {
+  content: "\e011";
+}
+.bcf-roundrect-top:before {
+  content: "\e012";
+}
+.bcf-roundrect:before {
+  content: "\e013";
+}
+.bcf-rectangle-diag:before {
+  content: "\e014";
+}
+.bcf-polygon:before {
+  content: "\e00f";
+}
+.bcf-triangle:before {
+  content: "\e015";
+}
+.bcf-arrow-double:before {
+  content: "\e016";
 }

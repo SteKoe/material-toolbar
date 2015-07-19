@@ -1,9 +1,6 @@
 .toolbar {
   position: relative;
-  overflow: hidden;
   height: 60px; }
-  .toolbar.with-title {
-    height: 80px; }
   .toolbar .toolbar-group {
     float: left;
     display: inline-block;
@@ -14,6 +11,13 @@
       font-size: 85%;
       height: inherit;
       background-color: transparent; }
+    .toolbar .toolbar-group .dropdown-content {
+      min-width: inherit; }
+      .toolbar .toolbar-group .dropdown-content.iconized li {
+        clear: none;
+        float: left;
+        width: 50%;
+        text-align: center; }
     .toolbar .toolbar-group .row {
       margin: 3px; }
       .toolbar .toolbar-group .row.full {
